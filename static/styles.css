@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: black;
+    font-family: 'Fira Code';
+    color: white;
+}
+
+h1, h2{
+    color: #f8aabe;
+}
+
+img{
+    width: 35vw
+}
