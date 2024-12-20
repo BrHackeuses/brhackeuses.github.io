@@ -7,12 +7,203 @@ body{
     background: black;
     font-family: 'Fira Code';
     color: white;
+    overflow-x: hidden;
+    cursor: auto;
+    position: relative;
 }
 
 h1, h2{
+    font-family: "Parisienne";
+    margin: 0;
+}
+
+h1{
+    font-size: 3em;
     color: #f8aabe;
 }
 
-img{
-    width: 35vw
+h2{
+    font-size: 2em;
 }
+a:hover{
+    filter: drop-shadow(0px 0px 15px rgb(255, 0, 140));
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+header div{
+    width: max-content;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row; 
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+nav ul {
+    list-style-type: none; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around; 
+    margin: 0;
+    padding: 0; 
+    width: 50%; 
+    /* border-bottom-color: rgb(255, 158, 234);
+    border-bottom-style: solid; */
+}
+
+
+img{
+    width: 25%
+}
+
+
+figure{
+    height: 9rem;  
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.1s ease;
+    flex: 1 0 50%;
+}
+
+figure img{
+    cursor: pointer;
+    transition: all 0.1s;
+    height: 5vh;
+    padding: 1em
+}
+
+figure img:hover {
+    filter: drop-shadow(0px 0px 15px rgb(255, 0, 140))
+}
+
+span{
+    font-family: 'Parisienne';
+    font-size: 1.5em;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 75vw;
+    padding-bottom: 5%;
+}
+
+#banner{
+    height: 95vh;
+}
+
+#scene{
+    padding: 5%;
+    padding-bottom: 0;
+}
+
+#discord{
+    padding: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Cursor Blob CSS */
+  .blob-cursor__bg{
+      --blob-size: 15rem;
+      position: absolute;
+      left: 50%;
+      top:  50%;
+      right: auto;
+      bottom: auto;
+      width: var(--blob-size);
+      height: var(--blob-size);
+      border-radius: 100%;
+      background: linear-gradient(rgb(199, 74, 74),rgb(113, 144, 230));
+      opacity: 1;
+      -webkit-filter: blur(120px);
+      filter: blur(15rem);
+      -webkit-animation: blobAnimation 2s Linear Infinite;
+      animation: blobAnimation 2s Linear Infinite;
+      z-index: -1;
+  }
+  @keyframes moveCursor1 {
+      from {
+          transform: scale(1);
+      }
+  
+      to {
+          transform: scale(.8);
+      }
+  }
+  @-webkit-keyframes blobAnimation{
+      0%{
+          opacity: 1;
+      }
+      50%{
+          opacity: 0.6;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
+  @keyframes blobAnimation{
+      0%{
+          opacity: 1;
+      }
+      50%{
+          opacity: 0.6;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
+
+
+
+
+  @media screen and (max-width: 651px) {
+    nav ul{
+        width: 100vw;
+    }
+    img{
+        width: 25vh;
+    }
+    .content{
+        text-align: center;
+    }
+
+  }

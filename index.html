@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="/static/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Parisienne&display=swap" >
+
 
     <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -22,13 +24,77 @@
 
 <body>
 
+    <header>
+        <nav>
+            <ul>
+                <li><a>Accueil</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Soutenez-nous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="blob-cursor__bg"></div>
+    <div id="cursorSection" class="show-cursor--bg"></div>
+
     <section id="banner">
         <div>
-            <h1>BrHackeuses : Empowerment des Femmes dans le Hacking</h1>
-            <h2>Un collectif 100% féminin, passionné et dédié à promouvoir l'inclusion des femmes et la diversité dans l’univers du hacking.</h2>
-            <img src="/static/images/logo_2024_3-tr.png">
+            <h1>BrHackeuses</h1>
+            <h2>Empowerment des Femmes dans le Hacking</h2>
+            <div id="scene">
+                <div data-depth="0.3">
+                    <img src="/static/images/logo_2024_3-tr.png">
+                </div>
+            </div>
         </div>
     </section>
+
+    <section id="whorwe">
+
+        <div class="content">
+            <h1>Qui Sommes Nous?</h1>
+            <p>
+                <b>Nous sommes un collectif 100% féminin, passionné et dédié à promouvoir l'inclusion des femmes dans le domaine du hacking éthique. </b>
+            </p>
+            <p>
+                Nous participons à des compétitions de type Capture The Flag (CTF), organisons des ateliers et créons des espaces d’échange pour encourager les femmes à développer leurs compétences techniques dans un environnement bienveillant et collaboratif.
+            </p>
+            <p> Le hacking est un domaine encore largement masculinisé. Nous croyons que la diversité et l’inclusion sont des forces qui peuvent enrichir le secteur de la cybersécurité et amener des perspectives innovantes. Notre mission est de faire tomber les barrières et de montrer que les femmes ont toute leur place dans cet univers.</p>
+        </div>
+
+        <div class="content">
+            <h1>Nos Missions et Nos Actions</h1>
+            <p>Chez les BrHackeuses, nous croyons que la diversité est une force. Nos actions s’articulent autour de plusieurs axes : </p>
+            <ul>
+                <li><b>Participation aux CTFs :</b>
+                Nous participons régulièrement à des compétitions de hacking éthique pour apprendre, progresser et démontrer notre savoir-faire.
+                Dernières réalisations : 21e place au m0leCon CTF, préparation pour l’EC2 au FIC (Forum InCyber).</li>
+
+                <li><b>Promotion de la diversité :</b>
+                Encourager les femmes à oser franchir le pas dans la cybersécurité et mettre en avant les talents féminins à travers nos actions et nos succès. </li>
+
+            <li> <b>Sensibilisation et Mentorat : </b>
+                Ateliers, formations et mentorat pour les débutant·es, afin d’ouvrir les portes du hacking à toutes et tous.
+                Partage de ressources techniques pour progresser ensemble.</li>
+            </ul>
+
+        
+        </div>
+
+
+        <div id="discord">
+            <figure>
+                <img class="figure-image" src="/static/images/discord.svg" alt="Discord Link" onclick="openNewTabWith('discord')">
+                <figcaption>Rejoignez-Nous</figcaption>
+            </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        &copy; BrHackeuses 2024 | <span>We'll BrHack It</span>
+    </footer>
     
 </body>
 
