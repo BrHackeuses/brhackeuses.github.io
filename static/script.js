@@ -4,7 +4,7 @@ var parallaxInstance = new Parallax(scene);
 
 
 /*Hyperlinks*/
-const URL_DISCORD = "https://discord.gg/xqvnaGzG6x";
+const URL_DISCORD = "https://discord.gg/s6Y3DgZkH2";
 
 
 var dicoUrl = {
